@@ -18,6 +18,7 @@ print(f1(1, 2))
 
 # YOUR CODE HERE
 
+
 def f2(*ints):
     sum = 0
 
@@ -45,6 +46,7 @@ print(f2(*a))  # Should print 22
 
 # YOUR CODE HERE
 
+
 def f3(x, y=1):
     return x + y
 
@@ -63,6 +65,7 @@ print(f3(8))  # Should print 9
 
 # YOUR CODE HERE
 
+
 def f4(**kwargs):
     for k, v in kwargs.items():
         print("key: {}, value: {}".format(k, v))
@@ -79,10 +82,7 @@ f4(a=12, b=30)
 # key: founded, value: "March 23, 1868"
 f4(city="Berkeley", population=121240, founded="March 23, 1868")
 
-d = {
-    "monster": "goblin",
-    "hp": 3
-}
+d = {"monster": "goblin", "hp": 3}
 
 # How do you have to modify the f4 call below to make this work?
 f4(**d)

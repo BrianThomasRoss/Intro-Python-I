@@ -56,7 +56,9 @@ elif len(sys.argv) == 3:
         year = int(sys.argv[2])
         print(cal.formatmonth(year, month))
     except ValueError:
-        print("Input integers which map to a month, ie. 1 thru 12, and a year, ie 1999 or 2030")
+        print(
+            "Input integers which map to a month, ie. 1 thru 12, and a year, ie 1999 or 2030"
+        )
 
 else:
     print("Please follow formatting guidelines: S14_cal.py mm yyyy")

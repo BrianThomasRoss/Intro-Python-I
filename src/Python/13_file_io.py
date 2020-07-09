@@ -13,7 +13,7 @@ from pathlib import Path
 
 __location__ = Path(os.path.abspath(os.getcwd()))
 
-with open(__location__ / 'foo.txt') as f:
+with open(__location__ / "foo.txt") as f:
     print(f.read())
 
 content = """
@@ -22,8 +22,8 @@ content = """
 # then close the file. Open up "bar.txt" and inspect it to make sure that it contains what you expect it to contain
 """
 
-with open(__location__ / 'bar.txt', "w") as f:
+with open(__location__ / "bar.txt", "w") as f:
     f.write(content)
 
-with open(__location__ / 'bar.txt') as f:
+with open(__location__ / "bar.txt") as f:
     print(f.read())

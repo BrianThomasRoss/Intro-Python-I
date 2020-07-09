@@ -15,23 +15,12 @@ has the following keys:
  - name: a name string for this location
 """
 
-waypoints = [{
-    "lat": 43,
-    "lon": -121,
-    "name": "a place"
-}, {
-    "lat": 41,
-    "lon": -123,
-    "name": "another place"
-}, {
-    "lat": 43,
-    "lon": -122,
-    "name": "a third place"
-}, {
-    "lat": 42,
-    "lon": -123,
-    "name": "a new waypoint"
-}]
+waypoints = [
+    {"lat": 43, "lon": -121, "name": "a place"},
+    {"lat": 41, "lon": -123, "name": "another place"},
+    {"lat": 43, "lon": -122, "name": "a third place"},
+    {"lat": 42, "lon": -123, "name": "a new waypoint"},
+]
 
 # Add a new waypoint to the list
 # Modify the dictionary with name "a place" such that its longitude
@@ -44,6 +33,4 @@ waypoints[0]["name"] = "not a real place"
 
 # Write a loop that prints out all the field values for all the waypoints
 for i in range(len(waypoints)):
-    print([
-        val for val in waypoints[i].values()
-    ])
+    print([val for val in waypoints[i].values()])

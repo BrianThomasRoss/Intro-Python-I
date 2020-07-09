@@ -8,14 +8,18 @@ x = 10
 y = 2.24552
 z = "I like turtles!"
 
-print("""
+print(
+    """
 %s
 %s
 %s
-""" % (x, y, z))
-print(f"""
+"""
+    % (x, y, z)
+)
+print(
+    f"""
 {x}
 {y}
 {z}
-""")
-
+"""
+)
