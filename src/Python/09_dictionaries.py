@@ -32,5 +32,6 @@ waypoints[0]["lon"] = -130
 waypoints[0]["name"] = "not a real place"
 
 # Write a loop that prints out all the field values for all the waypoints
-for i in range(len(waypoints)):
-    print([val for val in waypoints[i].values()])
+for item in range(len(waypoints)):
+    for val in [val for val in waypoints[item].values()]:
+        print(val)
